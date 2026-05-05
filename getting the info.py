@@ -5,8 +5,8 @@ import re
 
 
 
-books_of_scripture = ["ot","nt","bofm","dc-testament","pgp"]
-the_book_of_scripture = books_of_scripture[2]
+books_of_scripture = ["ot","nt","bofm"]
+the_book_of_scripture = books_of_scripture[2] #change this from 0 to 2 to pick from 0: Old Testament, 1: New Testament 2: Book of Mormon
 url = f"https://www.churchofjesuschrist.org/study/scriptures/{the_book_of_scripture}?lang=eng"
 page = urlopen(url)
 html = page.read().decode("utf-8")
